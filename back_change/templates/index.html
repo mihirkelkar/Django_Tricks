@@ -1,0 +1,34 @@
+<html>
+	{% load static %}
+	<head>
+		<title>
+			Dynamic Background Refresh
+		</title>
+		<style>
+			#body{
+				margin:auto;
+			}	
+
+			#background{
+				position: relative;
+				margin: auto;
+				margin-left: 0px;
+				margin-right: 0px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				height: 600px;
+				width: 800px;
+				z-index:-1;
+				top: -100px;
+			}
+		</style>
+	</head>
+	<body background="{%static image%}">	
+		<!--# Setting up a template for dynamic background change on page 
+		#load using django.
+		-->
+		<center>
+			<h1> Mihir Kelkar </h1>
+		</center>	
+	</body>
+</html>
